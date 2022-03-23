@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://sounds/Ambience_Hell_02.wav" type="AudioStream" id=1]
+[ext_resource path="res://sounds/Strange Dungeon.wav" type="AudioStream" id=2]
+[ext_resource path="res://scenes/Music_controller.gd" type="Script" id=3]
+[ext_resource path="res://sounds/Transformansion ending.wav" type="AudioStream" id=4]
+
+[node name="Music_controller" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 2 )
+volume_db = -20.0
+autoplay = true
+
+[node name="ambience" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+volume_db = -20.0
+autoplay = true
+
+[node name="Victory" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+[connection signal="finished" from="music" to="." method="_on_music_finished"]
+[connection signal="finished" from="ambience" to="." method="_on_ambience_finished"]
+[connection signal="finished" from="Victory" to="." method="_on_Victory_finished"]

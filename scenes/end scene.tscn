@@ -1,0 +1,130 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/end scene.gd" type="Script" id=2]
+[ext_resource path="res://ui/PixelFJVerdana12pt.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 3 )
+
+[node name="End_scene" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="label1" type="Label" parent="CanvasLayer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 1 )
+text = "You win!
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="credits" type="Label" parent="CanvasLayer"]
+visible = false
+modulate = Color( 1, 0, 0, 1 )
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 2 )
+text = "Credits
+
+Code - PracticalNPC
+Art - DawnBringer
+Music - BBandRage
+
+
+
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label2" type="Label" parent="CanvasLayer"]
+visible = false
+margin_top = -32.0
+margin_right = 1024.0
+margin_bottom = 568.0
+custom_fonts/font = SubResource( 1 )
+text = "
+if you want to learn more about game develpment 
+
+
+
+
+
+
+
+
+you can find the source code and assets on my website
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label5" type="Label" parent="CanvasLayer"]
+visible = false
+modulate = Color( 1, 0, 0, 1 )
+margin_left = -16.0
+margin_top = -48.0
+margin_right = 1008.0
+margin_bottom = 608.0
+custom_fonts/font = SubResource( 1 )
+text = "Youtube - @PracticalNPC
+Social Media - @PracticalNPC
+Website - mygamedesign.com"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label3" type="Label" parent="CanvasLayer"]
+visible = false
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 1 )
+text = "
+you can keep playing if you'd like...
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label4" type="Label" parent="CanvasLayer"]
+visible = false
+margin_top = 336.0
+margin_right = 1024.0
+margin_bottom = 760.0
+custom_fonts/font = SubResource( 1 )
+text = "keep playing
+Y \\ N"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="continue" type="Label" parent="CanvasLayer"]
+margin_top = 496.0
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 1 )
+text = "Space - continue
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

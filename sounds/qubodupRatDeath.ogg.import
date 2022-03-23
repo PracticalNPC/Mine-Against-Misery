@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/qubodupRatDeath.ogg-4e37a14efccab7b5f15531ab60077f04.oggstr"
+
+[deps]
+
+source_file="res://sounds/qubodupRatDeath.ogg"
+dest_files=[ "res://.import/qubodupRatDeath.ogg-4e37a14efccab7b5f15531ab60077f04.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
